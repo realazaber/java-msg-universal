@@ -10,8 +10,7 @@ public class javamsguni {
 
         
 
-        System.out.println("Please enter your message: ");
-        String _message = _input.getText();
+        String _message = JOptionPane.showInputDialog("Please enter your message");
 
         JLabel _label = new JLabel(_message);
 
@@ -20,10 +19,11 @@ public class javamsguni {
         _frame.add(_panel);
         _frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         _frame.setTitle("Pop up");
-        _frame.setSize(200, 100);
+        _frame.setSize(600, 300);
         
 
         _panel.add(_label);
+        _label.setSize(300);
         _frame.setVisible(true);
         
 
