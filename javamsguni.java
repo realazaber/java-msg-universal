@@ -12,31 +12,25 @@ public class javamsguni {
         JTextField _input = new JTextField(); //Takes in user input
 
         
+        String _message = JOptionPane.showInputDialog("Please enter your message"); //Gets the user's input.
 
-        String _message = JOptionPane.showInputDialog("Please enter your message");
+        JLabel _label = new JLabel(_message); //Sets the output to be whatever the user enters in.
 
-        JLabel _label = new JLabel(_message);
-
-        _panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 30, 30));
-
-        _frame.add(_panel);
-        _frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        _frame.setTitle("Pop up");
-        
-        
-
-        _panel.add(_label);
-        _label.setFont(new Font("Serif", Font.PLAIN, 30));
+        _frame.add(_panel); //Adds the panel to the window.
+        _frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //When you close the window the application ends.
+        _frame.setTitle("Pop up"); //Title for the window (text at the top bar).
+    
+        _panel.add(_label); //Adds the text to the panel.
+        _label.setFont(new Font("Serif", Font.PLAIN, 30)); //Sets the text font and size.
 
         
-        _frame.setLocationRelativeTo(null); 
-        _frame.setSize(400, 200);
-        _frame.setVisible(true);
-        
+        _frame.setLocationRelativeTo(null); //Positions the text box approximately in the center.
+        _frame.setSize(400, 200); //Sets the size of the pop up.
+        _frame.setVisible(true); //Makes the pop up visible.
 
     }
 
     public static void main(String[] args) {
-        new javamsguni();
+        new javamsguni(); //Instantiates the pop up box.
     }
 }
