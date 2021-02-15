@@ -1,3 +1,5 @@
+import java.awt.Font;
+
 import javax.swing.*;
 import javax.swing.plaf.DimensionUIResource;
 
@@ -20,11 +22,15 @@ public class javamsguni {
         _frame.add(_panel);
         _frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         _frame.setTitle("Pop up");
-        _frame.setSize(600, 300);
+        
         
 
         _panel.add(_label);
+        _label.setFont(new Font("Serif", Font.PLAIN, 30));
 
+        
+        _frame.setLocationRelativeTo(null); 
+        _frame.setSize(400, 200);
         _frame.setVisible(true);
         
 
