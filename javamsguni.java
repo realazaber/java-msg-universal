@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.plaf.DimensionUIResource;
 
 public class javamsguni {
 
@@ -23,7 +24,7 @@ public class javamsguni {
         
 
         _panel.add(_label);
-        _label.setSize(300);
+
         _frame.setVisible(true);
         
 
